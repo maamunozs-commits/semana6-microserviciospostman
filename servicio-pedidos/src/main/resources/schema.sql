@@ -1,0 +1,23 @@
+-- Script de creacion de tablas para servicio-pedidos
+-- Ejecutar en Oracle como usuario CUIDADOMASCOTAS
+
+-- Secuencia para IDs de PEDIDOS
+CREATE SEQUENCE PEDIDOS_SEQ
+    START WITH 1
+    INCREMENT BY 1
+    NOCACHE
+    NOCYCLE;
+
+-- Tabla PEDIDOS
+CREATE TABLE PEDIDOS (
+    ID                  NUMBER          NOT NULL,
+    NOMBRE_PRODUCTO     VARCHAR2(150)   NOT NULL,
+    CATEGORIA_PRODUCTO  VARCHAR2(50)    NOT NULL,
+    CANTIDAD            NUMBER          NOT NULL,
+    PRECIO_UNITARIO     NUMBER(10,2)    NOT NULL,
+    PRECIO_TOTAL        NUMBER(10,2)    NOT NULL,
+    ESTADO              VARCHAR2(30)    NOT NULL,
+    NOMBRE_CLIENTE      VARCHAR2(100)   NOT NULL,
+    FECHA_PEDIDO        VARCHAR2(20)    NOT NULL,
+    CONSTRAINT PK_PEDIDOS PRIMARY KEY (ID)
+);

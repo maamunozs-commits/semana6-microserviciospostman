@@ -1,0 +1,23 @@
+-- Script de creacion de tablas para servicio-citas
+-- Ejecutar en Oracle como usuario CUIDADOMASCOTAS
+
+-- Secuencia para IDs de CITAS
+CREATE SEQUENCE CITAS_SEQ
+    START WITH 1
+    INCREMENT BY 1
+    NOCACHE
+    NOCYCLE;
+
+-- Tabla CITAS
+CREATE TABLE CITAS (
+    ID              NUMBER          NOT NULL,
+    NOMBRE_MASCOTA  VARCHAR2(100)   NOT NULL,
+    TIPO_MASCOTA    VARCHAR2(50)    NOT NULL,
+    NOMBRE_DUENO    VARCHAR2(100)   NOT NULL,
+    TELEFONO_DUENO  VARCHAR2(20),
+    SERVICIO        VARCHAR2(100)   NOT NULL,
+    VETERINARIO     VARCHAR2(100)   NOT NULL,
+    FECHA_HORA      VARCHAR2(30)    NOT NULL,
+    ESTADO          VARCHAR2(30)    NOT NULL,
+    CONSTRAINT PK_CITAS PRIMARY KEY (ID)
+);

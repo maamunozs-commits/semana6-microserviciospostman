@@ -1,0 +1,25 @@
+# Compilados Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
+
+# Archivos temporales
+*.tmp
+*.swp
