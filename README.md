@@ -1,6 +1,6 @@
 # Microservicios - Cuidado Mascotas
 
-Proyecto de dos microservicios REST desarrollados con Spring Boot 3 y Oracle XE, para la asignatura **DSY2201**.
+Proyecto de dos microservicios REST desarrollados con Spring Boot 3 y Oracle XE, para la asignatura **FULLSTACK**.
 
 ---
 
@@ -136,4 +136,4 @@ Si se envían datos inválidos al POST, el servidor responde **HTTP 400** con el
 
 ## Autor
 
-Matias Muñoz — DSY2201 Semana 6
+Matias Muñoz — FULLSTACK Semana 6
